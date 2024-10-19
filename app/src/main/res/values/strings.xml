@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">HH</string>
+    <string name="job_title">Job Title</string>
+    <string name="company">Company</string>
+    <string name="salary">Salary</string>
+    <string name="location">Location</string>
+    <string name="search">Search</string>
+<!--    <string name="search1">Search</string>-->
+<!--    <string name="job_title1">Job Title</string>-->
+<!--    <string name="company1">Company</string>-->
+<!--    <string name="salary1">Salary</string>-->
+<!--    <string name="location1">Location</string>-->
+    <string name="search_for_suitable_jobs">Search for suitable jobs</string>
+<!--    <string name="search_for_suitable_jobs1">Search for suitable jobs</string>-->
+    <string name="jsc_otp_bank">АО «ОТП Банк» (JSC «OTP Bank»)</string>
+    <string name="_3_6">Опыт от 3 до 6 лет</string>
+    <string name="podrabotka"> Подработка </string>
+    <string name="date">Опубликовано 3 октября</string>
+    <string name="otklik">Откликнуться</string>
+    <string name="city">Москва</string>
+    <string name="todo">TODO</string>
+    <string name="vacancy">Android Developer (Kotlin)</string>
+</resources>

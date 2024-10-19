@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="jobLocation" type="id">location</item>
+    <item name="jobSalary" type="id">salary</item>
+    <item name="jobCompany" type="id">company</item>
+</resources>
