@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:background="@android:color/black">
+    android:background="@android:color/black"
+    android:orientation="vertical">
 
     <!-- Search bar -->
+
     <EditText
         android:id="@+id/searchEditText"
         android:layout_width="match_parent"
@@ -25,6 +26,7 @@
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
         android:textSize="16sp" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -114,23 +116,14 @@
 
     </LinearLayout>
 
-    <!-- RecyclerView for job list -->
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/recyclerView"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:layout_weight="1"-->
-<!--        android:padding="8dp"-->
-<!--        android:clipToPadding="false" />-->
-
     <!--    second job item-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_margin="8dp"
         android:background="@drawable/card_background"
-        android:padding="16dp"
-        android:layout_margin="8dp">
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <!-- Job title -->
         <TextView
@@ -139,25 +132,25 @@
             android:layout_height="wrap_content"
             android:text="@string/vacancy"
             android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <!-- Company and location -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:gravity="center_vertical"
+            android:orientation="horizontal"
             tools:ignore="UseCompoundDrawables">
 
             <TextView
                 android:id="@+id/companyName1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingEnd="8dp"
                 android:text="@string/jsc_otp_bank"
                 android:textColor="@android:color/white"
                 android:textSize="14sp"
-                android:paddingEnd="8dp"
                 tools:ignore="RtlSymmetry" />
         </LinearLayout>
 
@@ -174,28 +167,20 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
             android:layout_marginTop="8dp"
             android:background="@color/grey"
-            tools:ignore="UseCompoundDrawables"
-            >
-
-            <!--        <ImageView-->
-            <!--            android:id="@+id/experienceIcon"-->
-            <!--            android:layout_width="20dp"-->
-            <!--            android:layout_height="20dp"-->
-            <!--            android:contentDescription="@string/todo"-->
-            <!--            android:src="@drawable/ic_experience" />-->
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
             <TextView
                 android:id="@+id/experience1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
                 android:text="@string/_3_6"
                 android:textColor="@android:color/darker_gray"
-                android:textSize="14sp"
-                android:layout_marginStart="4dp" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -205,7 +190,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
-            android:text="Подработка"
+            android:text="@string/podrabotka"
             android:textColor="@android:color/holo_green_dark"
             android:textSize="14sp" />
 
@@ -213,33 +198,42 @@
             android:id="@+id/datePublished1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:text="@string/date"
             android:textColor="@android:color/darker_gray"
-            android:textSize="12sp"
-            android:layout_marginTop="4dp" />
+            android:textSize="12sp" />
 
         <!-- Button to apply -->
         <Button
             android:id="@+id/applyButton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/otklik"
-            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"
             android:backgroundTint="@color/blue"
-            android:layout_marginTop="8dp"/>
+            android:text="@string/otklik"
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 
-<!--    third job -->
-
+    <!-- RecyclerView for job list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="8dp" />
 
 
     <!-- Bottom navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/black"
+        android:layout_height="98dp"
+        android:background="@color/darkgrey"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_navigation_menu" />
 
 </LinearLayout>

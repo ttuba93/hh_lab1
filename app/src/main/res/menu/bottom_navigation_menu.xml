@@ -1,19 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_search"
-        android:icon="@drawable/ic_search"
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/img"
         android:title="Поиск" />
     <item
-        android:id="@+id/nav_favorites"
-        android:icon="@drawable/ic_favorite"
+        android:id="@+id/navigation_favorites"
+        android:icon="@drawable/img_1"
         android:title="Избранное" />
     <item
-        android:id="@+id/nav_applications"
-        android:icon="@drawable/ic_applications"
-        android:title="Отклики" />
+        android:id="@+id/navigation_responses"
+        android:icon="@drawable/img_2"
+        android:title="Отклики"/>
     <item
-        android:id="@+id/nav_profile"
-        android:icon="@drawable/ic_profile"
+        android:id="@+id/navigation_messages"
+        android:icon="@drawable/img_3"
+        android:title="Сообщения" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/img_4"
         android:title="Профиль" />
 </menu>
